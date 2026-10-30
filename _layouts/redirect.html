@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>Chat Legal</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ page.redirect.to }}">
+<script>
+/* Old page addresses: forward to the new page, and to the matching section or tab where there is one. */
+(function () {
+  var to = "{{ page.redirect.to }}";
+  var old = location.pathname.split("/").pop();
+  var section = {"advisor-document.html":"related-party-documentation","advisor-presentation.html":"monthly-presentations","advisor-tax.html":"tax-advice","advisor-trust.html":"trust-reviews-and-advice","contact.html":"contact","estate-business.html":"business-succession","estate-entities.html":"trust-and-company-succession","estate-tts.html":"testamentary-trusts","estate-wills.html":"wills-and-epas","health-commercial.html":"business-purchases-and-sales","health-contract.html":"contract-advice","health-property.html":"property-purchases-and-sales","health-protection.html":"asset-protection","health-psi.html":"personal-services-income-advice","health-structuring.html":"investment-structuring","health-wills.html":"estate-planning","terms-privacy.html":"privacy-policy","terms-service.html":"service-terms","terms-website.html":"website-terms"};
+  location.replace(to + (section[old] ? "#" + section[old] : ""));
+})();
+</script>
+<meta http-equiv="refresh" content="1; url={{ page.redirect.to }}">
+</head>
+<body>
+<p><a href="{{ page.redirect.to }}">Chat Legal</a></p>
+</body>
+</html>
