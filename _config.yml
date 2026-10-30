@@ -1,0 +1,7 @@
+# GitHub Pages settings. The redirect add-on creates the old page addresses
+# listed at the top of each page (redirect_from) and forwards them to that page.
+url: "https://chatlegal.com.au"
+plugins:
+  - jekyll-redirect-from
+exclude:
+  - README.md
